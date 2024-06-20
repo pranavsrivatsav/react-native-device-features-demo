@@ -22,6 +22,21 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Allow us to access your camera to capture the photos of your favorite places."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow us to use your location.",
+          "isAndroidForegroundServiceEnabled": "Allow us to use your location."
+        }
+      ]
+    ]
   }
 }
